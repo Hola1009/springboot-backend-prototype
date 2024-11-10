@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1b428b9-95b9-4482-930c-9747ff20b807" name="Changes" comment="# 后端模板-第一次提交" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JetBrains\maven\apache-maven-3.9.6\repository" />
+        <option name="userSettingsFile" value="D:\JetBrains\maven\apache-maven-3.9.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2oVIb3PtCVJmgra7Rs0JS5IiqV3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/CODE/java_workspace/springboot-backend-prototype/prototype-common/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c661af1136d2d353ad60d95c168d3dee&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CODE\java_workspace\springboot-backend-prototype\prototype-common\src\main\resources" />
+      <recent name="E:\CODE\java_workspace\springboot-backend-prototype\doc" />
+      <recent name="E:\CODE\java_workspace\springboot-backend-prototype" />
+      <recent name="E:\CODE\java_workspace\springboot-backend-prototype\sql" />
+      <recent name="E:\CODE\java_workspace\springboot-backend-prototype\prototype-web\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fancier.prototype.common.util" />
+      <recent name="com.fancier.prototype.admin.controller" />
+      <recent name="com.fancier.prototype.admin.domain.vo" />
+      <recent name="com.fancier.prototype.auth.constant" />
+      <recent name="com.fancier.prototype.common.constant" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="prototype-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fancier.prototype.web.MainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fancier.prototype.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/prototype-auth/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1b428b9-95b9-4482-930c-9747ff20b807" name="Changes" comment="" />
+      <created>1730948383820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730948383820</updated>
+      <workItem from="1730948384821" duration="310000" />
+      <workItem from="1730948704747" duration="1408000" />
+      <workItem from="1730951528704" duration="266000" />
+      <workItem from="1730951888567" duration="129000" />
+      <workItem from="1730962021797" duration="15997000" />
+      <workItem from="1731031209633" duration="9693000" />
+      <workItem from="1731044370140" duration="3041000" />
+      <workItem from="1731198047020" duration="6705000" />
+      <workItem from="1731206100357" duration="179000" />
+      <workItem from="1731206291991" duration="452000" />
+      <workItem from="1731206754168" duration="70000" />
+      <workItem from="1731206840553" duration="63000" />
+      <workItem from="1731206912362" duration="109000" />
+      <workItem from="1731207040405" duration="588000" />
+      <workItem from="1731207687730" duration="6000" />
+      <workItem from="1731207742638" duration="158000" />
+      <workItem from="1731208626947" duration="152000" />
+      <workItem from="1731215424906" duration="127000" />
+      <workItem from="1731216280984" duration="25000" />
+      <workItem from="1731216449678" duration="5847000" />
+      <workItem from="1731252090888" duration="170000" />
+      <workItem from="1731252284399" duration="41000" />
+      <workItem from="1731252339390" duration="137000" />
+      <workItem from="1731252505242" duration="431000" />
+      <workItem from="1731253186168" duration="42000" />
+    </task>
+    <task id="LOCAL-00001" summary="# 后端模板-第一次提交">
+      <option name="closed" value="true" />
+      <created>1731204878649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731204878649</updated>
+    </task>
+    <task id="LOCAL-00002" summary="# 后端模板-第一次提交">
+      <option name="closed" value="true" />
+      <created>1731206782966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731206782966</updated>
+    </task>
+    <task id="LOCAL-00003" summary="# 后端模板-第一次提交">
+      <option name="closed" value="true" />
+      <created>1731206936549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731206936549</updated>
+    </task>
+    <task id="LOCAL-00004" summary="# 后端模板-第一次提交">
+      <option name="closed" value="true" />
+      <created>1731207130340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731207130340</updated>
+    </task>
+    <task id="LOCAL-00005" summary="# 后端模板-第一次提交">
+      <option name="closed" value="true" />
+      <created>1731207760069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731207760069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="# 后端模板-第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 后端模板-第一次提交" />
+  </component>
+</project>

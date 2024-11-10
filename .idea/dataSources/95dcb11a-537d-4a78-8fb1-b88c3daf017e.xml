@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+    <root id="1">
+      <DefaultCasing>exact</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.39</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="mysql">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="3" parent="1" name="information_schema">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="4" parent="1" name="performance_schema">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="5" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="6" parent="1" name="bluebook">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="7" parent="1" name="nacos">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="8" parent="1" name="leaf">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="9" parent="1" name="mianxun">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="10" parent="1" name="mianshiya">
+      <IntrospectionTimestamp>2024-11-07.16:42:24</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-11-07.08:42:24</LocalIntrospectionTimestamp>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="11" parent="1" name="book">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <table id="12" parent="10" name="question">
+      <Comment>题目</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <table id="13" parent="10" name="question_bank">
+      <Comment>题库</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <table id="14" parent="10" name="question_bank_question">
+      <Comment>题库题目</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <table id="15" parent="10" name="user">
+      <Comment>用户</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <column id="16" parent="12" name="id">
+      <AutoIncrement>20</AutoIncrement>
+      <Comment>id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="17" parent="12" name="title">
+      <Comment>标题</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="18" parent="12" name="content">
+      <Comment>内容</Comment>
+      <DasType>text|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="19" parent="12" name="tags">
+      <Comment>标签列表（json 数组）</Comment>
+      <DasType>varchar(1024)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="20" parent="12" name="answer">
+      <Comment>推荐答案</Comment>
+      <DasType>text|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="21" parent="12" name="userId">
+      <Comment>创建用户 id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="22" parent="12" name="editTime">
+      <Comment>编辑时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="23" parent="12" name="createTime">
+      <Comment>创建时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="24" parent="12" name="updateTime">
+      <Comment>更新时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+    </column>
+    <column id="25" parent="12" name="isDelete">
+      <Comment>是否删除</Comment>
+      <DasType>tinyint|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <index id="26" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="27" parent="12" name="idx_title">
+      <ColNames>title</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="28" parent="12" name="idx_userId">
+      <ColNames>userId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="29" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="30" parent="13" name="id">
+      <AutoIncrement>20</AutoIncrement>
+      <Comment>id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="31" parent="13" name="title">
+      <Comment>标题</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="32" parent="13" name="description">
+      <Comment>描述</Comment>
+      <DasType>text|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="33" parent="13" name="picture">
+      <Comment>图片</Comment>
+      <DasType>varchar(2048)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="34" parent="13" name="userId">
+      <Comment>创建用户 id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="35" parent="13" name="editTime">
+      <Comment>编辑时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="36" parent="13" name="createTime">
+      <Comment>创建时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="37" parent="13" name="updateTime">
+      <Comment>更新时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>8</Position>
+    </column>
+    <column id="38" parent="13" name="isDelete">
+      <Comment>是否删除</Comment>
+      <DasType>tinyint|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <index id="39" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="40" parent="13" name="idx_title">
+      <ColNames>title</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="41" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="42" parent="14" name="id">
+      <AutoIncrement>28</AutoIncrement>
+      <Comment>id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="43" parent="14" name="questionBankId">
+      <Comment>题库 id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="44" parent="14" name="questionId">
+      <Comment>题目 id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="45" parent="14" name="userId">
+      <Comment>创建用户 id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="46" parent="14" name="createTime">
+      <Comment>创建时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="47" parent="14" name="updateTime">
+      <Comment>更新时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>6</Position>
+    </column>
+    <index id="48" parent="14" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="49" parent="14" name="questionBankId">
+      <ColNames>questionBankId
+questionId</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="50" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="51" parent="14" name="questionBankId">
+      <UnderlyingIndexName>questionBankId</UnderlyingIndexName>
+    </key>
+    <column id="52" parent="15" name="id">
+      <AutoIncrement>5</AutoIncrement>
+      <Comment>id</Comment>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="53" parent="15" name="user_account">
+      <Comment>账号</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="54" parent="15" name="user_password">
+      <Comment>密码</Comment>
+      <DasType>varchar(512)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="55" parent="15" name="union_id">
+      <Comment>微信开放平台id</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="56" parent="15" name="mp_open_id">
+      <Comment>公众号openId</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="57" parent="15" name="username">
+      <Comment>用户昵称</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="58" parent="15" name="user_avatar">
+      <Comment>用户头像</Comment>
+      <DasType>varchar(1024)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="59" parent="15" name="user_profile">
+      <Comment>用户简介</Comment>
+      <DasType>varchar(512)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="60" parent="15" name="user_role">
+      <Comment>用户角色：user/admin/ban</Comment>
+      <DasType>varchar(256)|0s</DasType>
+      <DefaultExpression>&apos;user&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="61" parent="15" name="edit_time">
+      <Comment>编辑时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="62" parent="15" name="create_time">
+      <Comment>创建时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+    </column>
+    <column id="63" parent="15" name="update_time">
+      <Comment>更新时间</Comment>
+      <DasType>datetime|0s</DasType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>12</Position>
+    </column>
+    <column id="64" parent="15" name="is_delete">
+      <Comment>是否删除</Comment>
+      <DasType>tinyint|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+    </column>
+    <index id="65" parent="15" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
